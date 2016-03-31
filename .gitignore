@@ -1,0 +1,7 @@
+.gitignore
+*.o
+*.ln
+*.sw*
+*~
+a.out
+core
