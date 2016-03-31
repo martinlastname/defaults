@@ -1,13 +1,45 @@
-colorscheme torte
+colors torte
 
+" ignore strict vi compatibility
+set nocompatible
+
+" prevent sounds on mistakes
+set noerrorbells
+
+" shows current mode and other cursor stats
+set modeline
+set showmode
+set ruler
+
+" default text managing stuff
 set expandtab
 set autoindent
 set tabstop=4
 
-set textwidth=78
+"backspace over everything 
+set backspace=indent,eol,start
+
+" textwidth stuff
+setlocal textwidth=78
+set nowrap
+
+" show tabs and newlines
+" newline = $, tabs = ^I
 set list
 
-" Copy-pasted from slackorama.com/projects/vim/vimrc.html
+" c tabs use two spaces
+au BufRead,BufNewFile *.{c,h,java} set expandtab
+au BufRead,BufNewFile *.{c,h,java} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java} set tabstop=2
+
+" Do not expand tabs in assembly file.  Make them 8 chars wide.
+au BufRead,BufNewFile *.s set noexpandtab
+au BufRead,BufNewFile *.s set shiftwidth=8
+au BufRead,BufNewFile *.s set tabstop=8
+
+" show syntax highlights
+syntax on
+
 " Java specific stuff
 let java_highlight_all=1
 let java_highlight_debug=1
