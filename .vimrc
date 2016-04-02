@@ -23,9 +23,10 @@ set backspace=indent,eol,start
 setlocal textwidth=78
 set nowrap
 
-" show tabs and newlines
-" newline = $, tabs = ^I
+" show tabs
+" tabs = ^I
 set list
+set listchars=tab:>-
 
 " c tabs use two spaces
 au BufRead,BufNewFile *.{c,h,java} set expandtab
