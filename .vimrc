@@ -24,7 +24,7 @@ setlocal textwidth=78
 set nowrap
 
 " show tabs
-" tabs = ^I
+" tabs = >--
 set list
 set listchars=tab:>-
 
