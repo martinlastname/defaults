@@ -27,6 +27,7 @@ set nowrap
 " tabs = >--
 set list
 set listchars=tab:>-
+highlight SpecialKey guifg=#5f5f5f
 
 " c tabs use two spaces
 au BufRead,BufNewFile *.{c,h,java} set expandtab
@@ -51,3 +52,6 @@ let java_mark_braces_in_parens_as_errors=1
 
 " highlight strings inside C comments
 let c_comment_strings=1
+
+" Auto-add asterisks in C comments
+filetype plugin indent on
