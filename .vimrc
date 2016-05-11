@@ -53,5 +53,6 @@ let java_mark_braces_in_parens_as_errors=1
 " highlight strings inside C comments
 let c_comment_strings=1
 
-" Auto-add asterisks in C comments
+" Auto-add asterisks in multiline comments
 filetype plugin indent on
+set formatoptions+=r
