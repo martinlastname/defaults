@@ -62,12 +62,12 @@ set formatoptions+=r
 function FileHeading()
         let s:line=line(".")
         call setline(s:line,   "/*")
-        call append (s:line,   " * Filename:        " .expand("%:t"))
-        call append (s:line+1, " * Author:          Your Name")
-        call append (s:line+2, " * Userid:          cs30xxxx")
-        call append (s:line+3, " * Description:     TODO")
-        call append (s:line+4, " * Date:            " .strftime("%Y-%m-%d"))
-        call append (s:line+5, " * Sources of help: TODO")
+        call append (s:line,   " * Filename: " .expand("%:t"))
+        call append (s:line+1, " * Author: Martin Matasovic")
+        call append (s:line+2, " * Userid: cs30xamy")
+        call append (s:line+3, " * Description: TODO")
+        call append (s:line+4, " * Date: " .strftime("%Y-%m-%d"))
+        call append (s:line+5, " * Sources of help: ")
         call append (s:line+6, " */")
         unlet s:line
 endfunction
