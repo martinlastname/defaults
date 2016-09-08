@@ -51,3 +51,6 @@ let java_mark_braces_in_parens_as_errors=1
 
 " highlight strings inside C comments
 let c_comment_strings=1
+
+" Python use tabs
+au BufRead,BufNewFile *.{py} set noexpandtab
