@@ -53,11 +53,10 @@ let java_mark_braces_in_parens_as_errors=1
 " highlight strings inside C comments
 let c_comment_strings=1
 
-<<<<<<< HEAD
 " Python use tabs
 au BufRead,BufNewFile *.{py} set noexpandtab
-=======
+
 " Auto-add asterisks in multiline comments
 filetype plugin indent on
 set formatoptions+=r
->>>>>>> 6e3065909255d6eab9b041d83ce70b903bd7fa46
+
