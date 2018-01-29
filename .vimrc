@@ -1,4 +1,5 @@
-colors torte
+"colors torte
+color elflord
 
 " ignore strict vi compatibility
 set nocompatible
